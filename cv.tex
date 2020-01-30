@@ -1,0 +1,126 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\usepackage{url}
+\usepackage{hyperref}
+
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{}{Yash Khare}
+\address{Kollam, Kerala}{India}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91 6397812260}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{yashsja@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{yashk2000.github.io}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{yashk2000}                        % optional, remove / comment the line if not wanted
+\social[twitter]{\_p0lar\_bear}                             % optional, remove / comment the line if not wanted
+\social[github]{yashk2000}                              % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{OBJECTIVE}
+\cvitem{}{To gain exposure, enhance my skills and always be ready to learn new things.}
+
+\section{EDUCATION}
+\cventry{2018-2022 Ongoing}{B.Tech in Computer Science and Engineering}{Amrita Vishwa Vidyapeetham}{Kollam, Kerala, India}{}
+{\textit{CGPA: 9.15/10}}{}  % arguments 3 to 6 can be left empty
+\cventry{2018}{St.Joseph's Academy, Higher Secondary Education ISC}{}{Dehradun, Uttarakhand, India}{}
+{\textit{Percentage: 94.25\%  }}{}  % arguments 3 to 6 can be left empty
+\cventry{2016}{St.Joseph's Academy, Higher Education ICSE}{}{Dehradun, Uttarakhand, India}{}
+{\textit{Percentage: 92.2\%  }}{}  % arguments 3 to 6 can be left empty
+
+\section{EXPERIENCE}
+\cventry{November 2019 - December 2019}{Intern at Defence Research and Development Organization(DRDO)}{}{}{}
+{I interned at IRDE, a DRDO establishment. During the internship, my work involved digital image processing, computer vision and automatic target detection using background differencing, frame differencing, difference fusion and ViBe.}
+\cventry{November 2019 - January 2020}{Google Code-In Mentor}{}{}{}
+{Google Code-in is a contest to introduce pre-university students (ages 13-17) to open source software development. I have been invited by the Wikimedia Foundation and FOSSASIA as a mentor for the Google Code-In 2019.}
+\cventry{August 2019 - Present}{GitHub Campus Expert}{}{}{}
+{As GitHub Campus Expert, I am trained to build a strong technical community. I organize several workshops and take sessions in them with support from GitHub.}
+\cventry{May 2019 - August 2019}{FOSSASIA Internship}{}{}{}
+{I got selected as a FOSSASIA intern in  May 2019. I overhauled cloud deployment of 2 applications, resulting in reduced run time performance by 30\%. I helped in developing the hardware simulation, Badge Magic Android, of a LED name badge, by passing the 2D array into a filter of animation specific algorithm; this enabled people without the hardware to experience the hardware beforehand. My work was also on the Phimp.me Android application which is photo editing tool using OpenCV. For both of these apps, I automated PlayStore and F-droid deployment process and improved the build time by 5 minutes using Fastlane tool, bash scripting, and continuous integration.}{}  % arguments 3 to 6 can be left empty
+\cventry{July 2019}{Undergraduate Summer School, Indian Institute of Science}{}{}{}
+{I was selected for the Undergraduate Summer School, held by the Department of Computer Science and Automation of Indian Institute of Science at Bengaluru. This program is a course for introduction into the fields of research where students are most involved currently. It is mainly meant for final and pre-final year students, but sophomores are also encouraged to apply. I was selected for the program in my sophomore year itself after clearing the application and interview phases, being the only sophomore accepted into the program out of the 90 selected students all over India.}{}  % arguments 3 to 6 can be left empty
+\cventry{July 2018 - Present}{Member and mentor at amFOSS}{}{}{}
+{amFOSS is the Free and Open Source Software club  of my college. I have been an active member of the community from the time I joined college. I actively take part in all events and also help in organizing events hosted by amFOSS. I also mentor my juniors and get them exposed to new technologies and open source as well. I am a member of our content writing team as well.}
+
+\section{ACHIEVEMENTS}
+\cvlistitem{My paper on \textbf{Infrared Image Enhancement using Convolution Matrices} got selected to be presented in the \textbf{International Conference on Optics and Electro-Optics 2019(ICOL 2019)} held at \textbf{Instruments Research and Development Establishment}, a premier \textbf{DRDO} establishment working in the field of Electro-optics}
+\cvlistitem{Got selected for \textbf{Hack The North}, Canada's biggest Hackathon, held at the University of Waterloo(travel funding provided)}
+\cvlistitem{Won \textbf{2nd prize in IBM-Cloud Category} in FOSSASIA UNESCO Hackathon held in Singapore.}
+\cvlistitem{FOSSASIA \textbf{OpenTech Night winner}: Got invited to \textbf{FOSSASIA Open Tech Summit held in Singapore} in March 2019.}
+\cvlistitem{Top contributor to Phimp.me and Badge Magic(helped in developing the app from scratch) projects of FOSSASIA with \textbf{150+} patches merged.}
+\cvlistitem{Finished among the \textbf{top 3 participants in Kharagpur Winter of Code(KWoC) 2019} which is an open source contributing competition.}
+
+\section{PROJECTS}
+\cventry{Tweegenous March 2019}{Tech stack: Python, Jupyter Notebook}{}{}{}
+{This project is use to collect tweets from twitter in different languages using NLP. It was developed as a part of the FOSSASIA-UNESCO Hackathon, in Singapore, in which my team won the 2nd place in IBM-Cloud Category. The tool was designed for people who speak indigenous languages. It collects tweets related to natural disaster and translates them in the language desired by the user and alerts people instantly if there is a natural calamity or any disaster headed their way by translating tweets. It is a two way system, for both the authorities and people.  Link to project:{\newline}
+\url{https://github.com/tweegenous}}{}
+\cventry{Computer Vision November 2019 - Present}{Tech Stack: Python, C++, OpenCV}{}{}{}
+{I have worked on several projects involving use of digital image processing and computer vision. Some of these projects include a smile detector, emotion detector, image stitcher which stitches similar images together to produce a panorama, shape detector, OMR sheet reader etc. I have also worked on implementing a research paper titled ViBe: A universal background subtraction algorithm for video sequences Links to projects:{\newline} \url{https://github.com/yashk2000/Image-Processing} {\newline} \url{https://github.com/yashk2000/computadoras-pueden-ver} {\newline}  \url{https://github.com/yashk2000/ViBe}}{}  % arguments 3 to 6 can be left empty
+\cventry{Phimpme November 2018 - January 2020}{Tech stack: Java, XML, Android, OpenCV}{}{}{}
+{Phimpme is an open source photo editing application designed for android phones. I am one of the top contributors in this project and have fixed several bugs and made several new features. I am also one of the maintainers of this project. Link to project:{\newline} \url{https://github.com/fossasia/phimpme-android}}{}  % arguments 3 to 6 can be left empty
+\cventry{Badge-Magic January 2019 - January 2020}{Tech Stack: Kotlin, XML, Android}{}{}{}
+{Badge-Magic is an android application which is used to control LED Badges. I have been a core contributor to the project and have helped build this project from scratch. I also help maintain this project. Link to project:{\newline} \url{https://github.com/fossasia/badge-magic-android}}{}  % arguments 3 to 6 can be left empty
+\cventry{Asha-SOS July 2019}{Tech Stack: JavaScript, HTML, CSS, Bootstrap}{}{}{}
+{This is a project for disaster management in case of floods when due to loss of internet connection, people are not able to send for help. Our project helps in providing a network in case of floods. A device called a Node-MCU is used to provide an wifi network. Link to project:{\newline} \url{https://github.com/kochi-hackathon/AshaSOS}}{}  % arguments 3 to 6 can be left empty
+\cventry{Temple App June 2019 - November 2019}{Tech stack: Java, XML, Android, Google Sheets API}{}{}{}
+{An Android app which handles the information about a temple. People can register and keep a track of all poojas, donations made to the temple. I am one of the core developers and maintainers of this project. Link to project:{\newline} \url{https://github.com/amfoss/TempleApp}}{}  % arguments 3 to 6 can be left empty
+
+\section{Volunteering}
+\cvlistitem{\textbf{MLH Local Hack Day:} This is a series of 3 events spanning across one academic  year of college. I have successfully organized Learn and Build events which were very well received. The 3rd evet, share will be held in April, 2020.}
+\cvlistitem{\textbf{Hacktoberfest Meetup Amritapuri:} This was a 2 day workshop to introduce beginners to Open Source via means of Hacktoberfest(a program by DigitalOcean). I helped organize this event on 9-10 October, 2019 and took sessions for the attendees to get them started with Open Source Contributions.}
+\cvlistitem{\textbf{Programming Essentials Workshop:} This is a 6 week long workshop(starting in August) to introduce freshers to basics of programming in languages such as C and Python. Juniors are also exposed to the world of Open Source Software and are taught about Git and GitHub. I helped in taking sessions and mentoring over 60 students as a part of this workshop.}
+\cvlistitem{\textbf{CIR Road to Excellence:} This workshop is help by the placement cell of my college, CIR. There were several tracks in this workshop, out of which I was responsible for organizing and taking sessions in the Android Development Track. I took a workshop for a batch of 60-70 students on developing Android apps using Java and Kotlin.}
+
+\section{LANGUAGES}
+\cvitemwithcomment{\textbf{English}}{Full Professional Proficiency}{}
+\cvitemwithcomment{\textbf{Hindi}}{Native Tongue, Full Professional Proficiency}{}
+
+\section{COMPUTER SKILLS}
+\cvitem{\textbf{OS}}{Linux(Debian and Fedora), Windows}
+\cvitem{\textbf{Programming Languages}}{Python, Java, Kotlin, XML, C, C++, Bash}
+\cvitem{\textbf{VCS}}{Git, Mercurial}
+\cvitem{\textbf{Other Skills}}{Android Development, Machine Learning, Computer Vision, OpenCV, Problem Solving}
+
+\section{INTERESTS}
+\cvitem{\textbf{Technical}}{Artificial Intelligence, Machine Learning, Computer Vision}
+\cvitem{\textbf{Hobbies}}{Reading, Travelling, Singing, Guitarist, Contributing to Open Source}
+
+\section{PERSONAL DETAILS}
+\cvitem{\textbf{DOB}}{12th November, 2000}
+\cvitem{\textbf{Current Residence}}{Kollam,Kerala, India}
+\cvitem{\textbf{Status}}{Student}
+
+\clearpage
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
