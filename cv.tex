@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\usepackage{url}
+\usepackage{hyperref}
+
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{}{Shashank Priyadarshi}
+\address{Kollam, Kerala, India}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91 9936596075}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{s.priyadarshi629@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{robustTechie.github.io}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{robustTechie}                        % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{OBJECTIVE}
+\cvitem{}{Seeking a position in the field of Computer Science where I can utilize my skills to further work towards personal and professional development and contribute towards the prosperity of the organization. Highly motivated and eager to learn new things.}
+
+\section{EDUCATION}
+\cventry{2019-2023 Ongoing}{B.Tech in Computer Science and Engineering with Artificial Intelligence}{Amrita Vishwa Vidyapeetham}{Kollam, Kerala, India}{}
+{\textit{CGPA: 9.2/10}}{}  % arguments 3 to 6 can be left empty
+\cventry{2018}{Sunbeam English School}{}{Varanasi, U.P., India}{}
+{\textit{Percentage: 92.6\%  }}{}  % arguments 3 to 6 can be left empty
+\cventry{2016}{Imperial Public School}{}{Varanasi, U.P., India}{}
+{\textit{Percentage: 10CGPA  }}{}  % arguments 3 to 6 can be left empty
+
+\section{EXPERIENCE}
+\cventry{August 2019}{Member at amFOSS}{}{}{}
+{amFOSS is the Free and Open Source Software club of my college. I have been an active member of the community from the time I joined college. I actively take part in all events and also help in organizing events hosted by amFOSS.}
+\cventry{January 2020}{ Open source contributor for Mifos}{}{}{}
+{ Open source contributor for the Android Client application developed by Mifos. Sent 20+ PR for introducing new features and fixing various bugs in application. Links to projects:{\newline} 
+\url{https://github.com/openMF/android-client}}{}  % arguments 3 to 6 can be left empty
+
+\section{PROJECTS}
+\cventry{Decemeber 2019- present}{ Android Client - Mifos}{}{}{}
+{Field Officer Application is an application developed for the Bank staff field officer to keep track of Clients, Centers, Groups, Loan Account, Savings Account, etc. I am contributing to this project. Tech stack used- Android, Java, XML. Link to project:{\newline} 
+\url{https://github.com/openMF/android-client}}{}  % arguments 3 to 6 can be left empty
+\cventry{January 2020}{CrimsonLychee}{}{}{}
+{Developed this application during Hackverse (Hackathon). This application will boost your current mood. Whether you are happy, sad, angry, surprised, it will present you with quotes, videos and posts that will improve your mood to a great extent. This application uses emotion recognition to predict the emotion of the user by scanning their face. Tech stack used- Android, Java, XML. Links to projects:{\newline}
+\url{https://github.com/AwesomeFruitSalad/CrimsonLychee}}{}
+\cventry{November 2019}{MomentO}{}{}{}
+{This is desktop application based on Java. With the help of this application one can find the Moment of inertia and centre of Mass of a given random figure about any axis or any point defined by the user. It provides some basic shapes like rectangular channel, triangular channel, and a user can also define a new shape. Tech stack- Java, Netbeans. Link to project:{\newline}
+\url{https://github.com/robustTechie/MomentO}}{}
+\cventry{June 2019}{Hospital Managment System}{}{}{}
+{Its uses MySQL as DBMS software. This app contains all the information about hospital, patients, doctors. Also the user can add, delete, modify or fetch hospital details. Tech stack: Python, Tkinter. Link to the project:  {\newline}
+\url{https://github.com/robustTechie/Hospital-Management-System}}{}
+% arguments 3 to 6 can be left empty
+
+\section{VOLUNTEER}
+\cventry{October 2019}{Hacktoberfest}{}{}{}
+{Helped in volunteering  hacktoberfest last year where various workshops were taken on GitHub, Gnome etc. }
+
+\section{CONFERENCE ATTENDED}
+\cventry{September 2019}{ML and Deep Learning, Amrita Vishwa Vidyapeetham}{}{}{}
+{Here I learnt various topics like signal sensing, image processing, CNN, DNN etc.}
+\cventry{January 2020}{GirlScript launch, Amrita Vishwa Vidyapeetham}{}{}{}
+{GirlScript focuses to empower people by educating them on technology and related necessary skills. Here also I learnt about other things like benefit of Competitive Programming, Flutter, ML}
+\cventry{January 2020}{Hackverse}{}{}{}
+{Attended conference of Digital Ocean, Elastic and Matic. Here I learnt about docker, block chain, elastic search etc. }
+
+\section{ACHIEVEMENTS}
+\cvlistitem{Completed Diploma in Computer Management, this is a 2 years course for basics of Networking, Hardware and Software.}
+\cvlistitem{Completed 6 years playing guitar. Certification:Prayag Sangeet Samiti, Allahabad}
+
+\section{LANGUAGES}
+\cvitemwithcomment{\textbf{English}}{Full Professional Proficiency}{}
+\cvitemwithcomment{\textbf{Hindi}}{Native Tongue, Full Professional Proficiency}{}
+
+\section{COMPUTER SKILLS}
+\cvitem{\textbf{OS}}{Linux, Windows}
+\cvitem{\textbf{Programming Languages}}{Python, Java, Kotlin, XML, C, MySQL}
+\cvitem{\textbf{VCS}}{Git}
+\cvitem{\textbf{Other Skills}}{Android Development, AutoCad, 3D Drawing(Solid Works), Problem Solving, Adobe Photoshop, CorelDraw}
+
+\section{INTERESTS}
+\cvitem{\textbf{Technical}}{Artificial Intelligence, Machine Learning, Computer Vision, Deep Learning, Cloud computing, Block Chain, Contributing to Open Source}
+\cvitem{\textbf{Hobbies}}{Travelling, Photography, Guitar}
+
+\section{PERSONAL DETAILS}
+\cvitem{\textbf{DOB}}{26th June, 2000}
+\cvitem{\textbf{Current Residence}}{Kollam,Kerala, India}
+\cvitem{\textbf{Status}}{Student}
+
+\clearpage
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
